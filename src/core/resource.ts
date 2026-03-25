@@ -30,6 +30,11 @@ export const getLabel = (data: any) => (locale = 'en') => {
   return propertyValue ? getStringValue(propertyValue, locale) : undefined;
 } 
 
+export const getSummary = (data: any) => (locale = 'en') => {
+  const propertyValue = getPropertyValue<string | InternationalString>(data, 'summary');
+  return propertyValue ? getStringValue(propertyValue, locale) : undefined;
+} 
+
 export const getMetadata = (data: any) => (locale?: string): CozyMetadata[] => {
   const metadata = getPropertyValue(data, 'metadata') as MetadataItem[];
   if (!metadata) return [];

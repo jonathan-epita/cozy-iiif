@@ -62,6 +62,8 @@ export interface CozyManifest {
 
   getLabel(locale?: string): string | undefined;
 
+  getSummary(locale?: string): string | undefined;
+
   getTableOfContents(): CozyTOC;
 
   getMetadata(locale?: string): CozyMetadata[];

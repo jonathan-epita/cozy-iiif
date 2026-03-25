@@ -10,6 +10,7 @@ import {
   getPropertyValue, 
   getRegionURL, 
   getStaticImagePixelSize, 
+  getSummary, 
   getTableOfContents,
   getThumbnailURL, 
   normalizeServiceUrl, 
@@ -254,6 +255,7 @@ const parseManifestResource = (resource: any, majorVersion: number): CozyManifes
     canvases,
     structure: ranges,
     getLabel: getLabel(v3),
+    getSummary: getSummary(v3),
     getMetadata: getMetadata(v3),
     getTableOfContents: getTableOfContents(ranges)
   }

@@ -20,7 +20,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "vite build && tsc --emitDeclarationOnly",
-    "prepack": "npm run build",
+    "postinstall": "npm run build",
     "test": "vitest"
   },
   "exports": {

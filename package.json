@@ -20,6 +20,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "vite build && tsc --emitDeclarationOnly",
+    "prepack": "npm run build",
     "test": "vitest"
   },
   "exports": {
@@ -30,7 +31,7 @@
   "devDependencies": {
     "typescript": "^5.9.3",
     "vite": "^7.3.1",
-    "vitest": "^4.0.18"
+    "vitest": "^4.1.1"
   },
   "dependencies": {
     "@iiif/parser": "^2.2.9",
